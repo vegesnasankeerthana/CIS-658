@@ -3,41 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BoardGame Resource</title>
+    <title>Board Game Resource</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 20px;
+            background-color: #f4f4f9;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
         }
-        .game-card {
-            background: white;
+        .board-game-card {
+            background: linear-gradient(135deg, #ff7eb3, #ff758c);
+            color: white;
             padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-            max-width: 400px;
+            border-radius: 15px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+            max-width: 350px;
             text-align: center;
         }
-        h2 {
-            color: #333;
+        .board-game-card h2 {
+            margin: 0 0 10px;
+            font-size: 24px;
         }
-        .details {
-            font-size: 16px;
-            color: #555;
+        .board-game-card p {
+            margin: 5px 0;
+            font-size: 18px;
+        }
+        .board-game-card .players {
+            font-weight: bold;
+            font-size: 20px;
         }
     </style>
 </head>
 <body>
-    <div class="game-card">
-        <h2 id="title">Catan</h2>
-        <p class="details"><strong>Publisher:</strong> <span id="publisher">Kosmos</span></p>
-        <p class="details"><strong>Release Year:</strong> <span id="release-year">1995</span></p>
-        <p class="details"><strong>Players:</strong> <span id="players">3-4</span></p>
-        <p class="details"><strong>Playtime:</strong> <span id="playtime">60-120 mins</span></p>
+    <div class="board-game-card">
+        <h2>Catan</h2>
+        <p><strong>Publisher:</strong> Catan Studio</p>
+        <p><strong>Release Year:</strong> 1995</p>
+        <p class="players">Players: 3-4</p>
+        <p><strong>Playtime:</strong> 60-120 mins</p>
     </div>
 </body>
 </html>
+
