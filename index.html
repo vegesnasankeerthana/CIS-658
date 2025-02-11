@@ -3,47 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Board Game Resource</title>
+    <title>Board Games List</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-        .board-game-card {
-            background: linear-gradient(135deg, #ff7eb3, #ff758c);
-            color: white;
+            margin: 20px;
             padding: 20px;
-            border-radius: 15px;
-            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
-            max-width: 350px;
-            text-align: center;
         }
-        .board-game-card h2 {
-            margin: 0 0 10px;
-            font-size: 24px;
+        .game-list {
+            list-style-type: none;
+            padding: 0;
         }
-        .board-game-card p {
-            margin: 5px 0;
-            font-size: 18px;
+        .game-list li {
+            margin: 10px 0;
         }
-        .board-game-card .players {
-            font-weight: bold;
-            font-size: 20px;
+        a {
+            text-decoration: none;
+            color: blue;
+        }
+        a:hover {
+            color: darkred;
         }
     </style>
 </head>
 <body>
-    <div class="board-game-card">
-        <h2>Catan</h2>
-        <p><strong>Publisher:</strong> Catan Studio</p>
-        <p><strong>Release Year:</strong> 1995</p>
-        <p class="players">Players: 3-4</p>
-        <p><strong>Playtime:</strong> 60-120 mins</p>
-    </div>
+    <h1>Board Games</h1>
+    <ul class="game-list">
+        <li><a href="game1.html">Catan</a></li>
+        <li><a href="game2.html">Carcassonne</a></li>
+        <li><a href="game3.html">Ticket to Ride</a></li>
+    </ul>
 </body>
 </html>
 
